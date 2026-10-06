@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 //   : 'https://mmport-b2fzejc8h9cwfffb.centralindia-01.azurewebsites.net/api';
 
 
-export const API_BASE = 'http://localhost:5001/api';
+export const API_BASE = 'https://portfolio-analytics-iulb.onrender.com/api';
 
 
 export const getAuthHeaders = () => {

@@ -61,7 +61,7 @@ app.get('/health', (_, res) => res.json({ status: 'ok', timestamp: new Date().to
 app.use('/api/analytics', analyticsRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/admin', adminRoutes);
-
+app.get('/health', (_, res) => res.json({ status: 'ok', timestamp: new Date().toISOString() }));
 // -- 404 & Error handler -------------------------------------------
 app.use(notFound);
 app.use(errorHandler);
