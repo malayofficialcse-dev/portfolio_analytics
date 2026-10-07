@@ -46,7 +46,7 @@ export default function App() {
 
         <Route path="/admin" element={<Navigate to="/admin/analytics" replace />} />
         <Route path="/admin/login" element={<LoginPage />} />
-        <Route path="/admin/register" element={<RegisterPage />} />
+
         <Route path="/admin/analytics" element={<ProtectedRoute element={<AnalyticsDashboard />} />} />
         <Route path="/admin/analytics/:tab" element={<ProtectedRoute element={<AnalyticsDashboard />} />} />
         <Route path="/admin/dashboard" element={<ProtectedRoute element={<DashboardPage />} />} />
