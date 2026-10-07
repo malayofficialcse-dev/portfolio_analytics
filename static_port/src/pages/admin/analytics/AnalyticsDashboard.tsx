@@ -385,7 +385,7 @@ export function AnalyticsDashboard() {
                           data={pagesBarData}
                           layout="vertical"
                           margin={{ top: 10, right: 20, left: 20, bottom: 0 }}
-                          onClick={(data) => {
+                          onClick={(data: any) => {
                             if (data && data.activePayload && data.activePayload[0]) {
                               handleSelectPageDrilldown(data.activePayload[0].payload.path);
                             }
@@ -439,7 +439,7 @@ export function AnalyticsDashboard() {
                               return `${short} ${Math.round((percent || 0) * 100)}%`;
                             }}
                             labelLine={false}
-                            onClick={(entry) => {
+                            onClick={(entry: any) => {
                               if (entry && entry.path) handleSelectPageDrilldown(entry.path);
                             }}
                           >
